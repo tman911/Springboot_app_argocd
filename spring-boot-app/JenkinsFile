@@ -9,7 +9,7 @@ pipeline {
     stage('Checkout') {
       steps {
         sh 'echo passed'
-        //git branch: 'main', url: 'https://github.com/tman911/Springboot_app_argocd.git'
+        git branch: 'main', url: 'https://github.com/tman911/Springboot_app_argocd.git'
       }
     }
     stage('Build and Test') {
